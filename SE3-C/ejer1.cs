@@ -4,17 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SE3_C
+namespace Trabajo
 {
-    internal class ejer1
+    internal class Program
     {
-        string nombre, carrera;
+        static void Main(string[] args)
+        {
+            string n, c;
 
-        Console.Write("ingrese nombre: ");
-            nombre = Console.readline
-        Console.Write("ingrese carrera: ");
-        carrera = Console.readline
-        console.readkey();
+            Console.Write("ingrese nombre: ");
+            n = Console.ReadLine();
+            Console.Write("ingrese carrera: ");
+            c = Console.ReadLine();
 
+            Console.WriteLine("\n------IMPRESION CON + ------");
+            Console.WriteLine(n + ",BIENVENIDO AL CURSO FA DE LA CARRERA " + c);
+
+            Console.WriteLine("\n------IMPRESION CON $ ------");
+            Console.WriteLine($"{n}, BIENVENIDO AL CURSO FA DE LA CARRERA {c}");
+            Console.ReadKey();
+
+        }
     }
 }
+
